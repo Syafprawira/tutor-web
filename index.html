@@ -2,10 +2,7 @@
 <html>
 <head>
 <title>Website Ku</title>
-<meta name="viewport" content="width-device,initial-scale=1,maximum-scale=1">
-</head>
-<body>
-
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <style>
 * {
 	padding:0;
@@ -14,7 +11,7 @@
 }
 .banner {
 	padding: 5px 0;
-	background-color: #C70039;
+	background-color: #581845;
 }
 .banner ul li {
 	display: inline-block;
@@ -27,134 +24,167 @@
 header h1 {
 	float: right;
 	padding: 20px 0;
-	color: #C70039;
+	color: #581845;
 }
 header ul li {
 	display: inline-block;
 }
 header ul li a {
-	padding: 25px 15px;
+	padding: 30px 5px;
 	display: inline-block;
 	color: #282828;
 	text-decoration: none;
 }
 header ul li a:hover {
-	background-color: #C70039;
+	background-color: #581845;
 	color: #fff;
 }
 .active {
-	background-color: #C70039;
+	background-color: #581845;
 	color: #fff;
 }
-.uraian {
-	padding: 35px 20px;
-	text-align: justify;
-	text-indent: 5%;
-	color: #C70039;
+.bagan{
+	
+	padding: 25px;
+	color:#581845;
 }
-.artikel1 {
-	padding: 20px 5px;
-	text-indent: 5%;
-	color: #581845;
+.bagan .col-4{
+	width:25%;
+	padding: 20px;
+	box-sizing: border-box;
+	
 	text-align: center;
+	float:left;
 }
-.isi1 {
-	padding: 0 20px;
-	text-indent: 5%;
-	text-align: justify;
+.confirm{
+	float:right;
+	margin: 25px 57%;
+	padding: 1px 1px;
+	background: #581845;
 }
-.desain {
-	padding: 100px 0;
-	text-indent: 5%;
-	color: #581845;
+.akhir{
+	padding: 0 48%;
+	float:right;
+	color:#581845;
 }
-.img-responsive {
-	width: 600px;
-	height: 400px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 100%;
-	height: auto;
-}
-.isidesain{
-	padding: 0 20px;
-	text-indent: 5%;
-	text-align: justify;
-}
-@media only screen and (max-width: 720px)
-{
-* {
-	padding:0;
-	margin:0;
-	font-family: sans-serif;
-}
-.banner {
-
-	background-color: #581845;
-}
-.banner ul li {
-	display: inline-block;
-	color: #fff;
-}
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
-header h1 {
-	float: right;
-	color: #581845;
-}
-header ul li {
-	display: inline-block;
-}
-header ul li a {
-	padding: 25px 15px;
-	display: inline-block;
-	color: #282828;
-	text-decoration: none;
-}
-header ul li a:hover {
-	background-color: #581845;
-	color: #fff;
-}	
-.active {
-	background-color: #581845;
-	color: #fff;
-}
-
+body {
+			margin: 0;
+			padding: 0;
+			font-size: 15px;
+			font-family: sans-serif;
+			background: url(foto.jpg);
+			height: 100vh;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
 </style>
+<script type="text/javascript">
+	function hasil()
+	{
+		var iphone=8000000 * parseInt(document.getElementById("harga_iphone").value);
+		var rog=15000000 * parseInt(document.getElementById("harga_rog").value);
+		var xiaomi=10000000 * parseInt(document.getElementById("harga_xiaomi").value);
+		var fold=30000000 * parseInt(document.getElementById("harga_fold").value);
+
+		console.log("Test")
+		var Jumlah_harga;
+		Jumlah_harga=iphone + rog + xiaomi + fold;
+		document.getElementById("hasil").value=Jumlah_harga;
+	}
+	
+</script>
+</head>
+<body>
 <div class="banner">
 	<div class="container">
 		<ul>
 			<li>
-			<h1>BASE CAMPKU</h1>
+			<h1>PS STORE</h1>
 		</li>
 	</ul>
 </div>
 </div>
 <header>
 	<div class="container">
-		<h1>REVIEW GADGET</h1>
+		<h1>APLIKASI KASIR</h1>
 		<ul>
 			<li>
-			<li><a href="home.html">HOME</a></li>
-		    <li class="active"><a href="file.html">FILE</a></li>
-		    <li><a href="about.html">ABOUT</a></li>
+		    <li class="active"><a href="file.html">GADGET</a></li>
+		    <li><a href="about.html">AKSESORIS</a></li>
 		    </li>
 	    </ul>
 	 </div>
 </header>
+	<!--isi-->
+<section>
+	<div class="bagan">
+		<div class="col-4">
+    <h4>No</h4>
+	</div>
+		<div class="col-4">
+    <h4>Produk</h4>
+	</div>
+		<div class="col-4">
+    <h4>Harga Satuan</h4>
+	</div>
+		<div class="col-4">
+    <h4>Jumlah Beli</h4>
+	</div>
+		<div class="col-4">
+    <h4>1</h4>
+	</div>
+		<div class="col-4">
+    <h4>iPhone XR</h4>
+    
+	</div>
+		<div class="col-4">
+    <h4>Rp 8.000.000</h4>
+	</div>
+		<div class="col-4">
+    <input type="text" name="Jumlah" id="harga_iphone">Unit
+	</div>
+		<div class="col-4">
+    <h4>2</h4>
+	</div>
+		<div class="col-4">
+    <h4>Asus ROG 2</h4>
+	</div>
+		<div class="col-4">
+    <h4>Rp 15.000.000</h4>
+	</div>
+		<div class="col-4">
+    <input type="text" name="Jumlah" id="harga_rog">Unit
+	</div>
+		<div class="col-4">
+    <h4>3</h4>
+	</div>
+		<div class="col-4">
+    <h4>Xiaomi 11</h4>
+	</div>
+		<div class="col-4">
+    <h4>Rp 10.000.000</h4>
+	</div>
+		<div class="col-4">
+    <input type="text" name="Jumlah" id="harga_xiaomi">Unit
+	</div>
+		<div class="col-4">
+    <h4>4</h4>
+	</div>
+		<div class="col-4">
+    <h4>Samsung Galaxy Fold</h4>
+	</div>
+		<div class="col-4">
+    <h4>Rp 30.000.000</h4>
+	</div>
+		<div class="col-4">
+    <input type="text" name="Jumlah" id="harga_fold">Unit
+	</div>
+</section>
 
-	<p class="uraian">Istilah " HP Kentang" menjadi populer dalam beberapa tahun belakangan. Semenjak banyak vendor smartphone baru bermunculan, menghadirkan beragam jenis handphone (HP) dengan spesifikasi berbeda-beda. Julukan "HP Kentang" pun sudah cukup familiar di kalangan para gamer atau penggiat gadget. Lantas, smartphone seperti apa yang bisa disebut sebagai "HP Kentang"?"Kabarnya, 'kentang' itu singkatan dari kena tanggung, sesuai artinya yaitu spesifikasi gawai yang tanggung," ujar <b>Lucky</b>.</p>
-   <ul>
-	<li><h2 class="artikel1">Review iPhone 12 Pro</h2></li>
-	<li><p class="isi1">Flagship dari Apple yang satu ini memang telah dinantikan kehadirannya, karena mengusung desain yang akhirnya lebih berbeda dari generasi-generasi sebelumnya. Walaupun belum hadir secara resmi, tak sedikit yang rela untuk membeli iPhone 12 Pro secara non-resmi.Yah nggak ada salahnya sih kalau memang budget-nya ada. Yang menjadi pertanyaan, seberapa jauh perbedaan antara flagship terbaru Apple di 2020 jika dibandingkan dengan seri iPhone 11 Pro? Jawabannya, tergantung dari bagaimana kamu menggunakan sebuah smartphone. Bisa terasa signifikan, bisa juga sama saja.
-	Beberapa waktu lalu, saya berkesempatan untuk mencoba iPhone 12 Pro selama beberapa waktu, meminjam unit dari K2Gadgets. Dan berikut adalah pengalaman dan sedikit testimoni mengenai iPhone kamera boba terbaru tersebut.</p></li>
-   </ul>
-   <h3 class="desain">Desain</h3>
-   <img src="iphone.jpg" class="img-responsive"><br><br><br>
-   <p class="isidesain">Lewat iPhone 12 series, Apple seperti ingin menggabungkan bahasa desain smartphone modern mereka dengan seri lama seperti iPhone 4/5. Jadilah iPhone 12 Pro dengan sisi samping yang dibuat flat, tak lagi rounded atau melingkar. Beberapa orang mengira jika sudutnya yang tajam bakal menimbulkan rasa tidak nyaman di telapak tangan. Namun di dalam genggaman, terasa nyaman-nyaman saja, layaknya memegang iPhone 5 (versi besar ya), walaupun dimensinya juga tergolong kecil untuk standar smartphone flagship masa kini. Meski layarnya lebih besar, iPhone 12 Pro hanya lebih lebar 0,1mm dan lebih tipis di 7,4mm, berkat desain baru dan bezel layarnya yang dibuat lebih ramping.Unit yang saya coba adalah hero colornya, yaitu <b>Pacific Blue.</b> Birunya sangat kalem, berbeda dengan biru iPhone 12 biasa yang agak mencolok. Dengan lapisan Gorilla Glass di kaca depan dan belakang, bingkai atau frame yang terbuat dari stainless ini gampang banget kotor atau membekas sidik jari. Jadi kalau mau terus bersih, harus pakai case tambahan. 
-   	<a href="selanjutnya.html">>>Selanjutnya...</a><br><br>
+<section class="confirm">
+<input type="button" value="Jumlah" onclick="hasil();"></section>
+<section class="akhir">
+<input type="text" name="hasil" id="hasil">Rupiah
+</section>
 </body>
 </html>
